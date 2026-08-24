@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="140" height="140">
+  <!-- Source asset for the Dice Roller lab. The same SVG is inlined in index.html. -->
+  <rect x="4" y="4" width="92" height="92" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <g fill="#334155">
+    <circle data-pip="tl" cx="30" cy="30" r="8"/>
+    <circle data-pip="tr" cx="70" cy="30" r="8"/>
+    <circle data-pip="ml" cx="30" cy="50" r="8"/>
+    <circle data-pip="mr" cx="70" cy="50" r="8"/>
+    <circle data-pip="bl" cx="30" cy="70" r="8"/>
+    <circle data-pip="br" cx="70" cy="70" r="8"/>
+    <circle data-pip="c"  cx="50" cy="50" r="8"/>
+  </g>
+</svg>

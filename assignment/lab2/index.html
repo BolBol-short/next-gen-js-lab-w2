@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dice Roller — Week 2 Lab</title>
+    <!-- Provided styling — do not edit -->
+    <link rel="stylesheet" href="../protected/lab2/CSS/style.css">
 </head>
 <body>
-    
+
+    <main class="card">
+        <h1>🎲 Dice Roller</h1>
+        <p class="subtitle">JavaScript — Week 2 · Lab 2</p>
+
+        <!-- The die: displayRoll() shows/hides the pips (circles) for you -->
+        <svg id="die" viewBox="0 0 100 100" width="140" height="140" role="img" aria-label="Dice face">
+            <rect x="4" y="4" width="92" height="92" rx="18" class="die-body"/>
+            <g fill="#334155">
+                <circle data-pip="tl" cx="30" cy="30" r="8"/>
+                <circle data-pip="tr" cx="70" cy="30" r="8"/>
+                <circle data-pip="ml" cx="30" cy="50" r="8"/>
+                <circle data-pip="mr" cx="70" cy="50" r="8"/>
+                <circle data-pip="bl" cx="30" cy="70" r="8"/>
+                <circle data-pip="br" cx="70" cy="70" r="8"/>
+                <circle data-pip="c"  cx="50" cy="50" r="8"/>
+            </g>
+        </svg>
+
+        <p id="reaction" class="reaction"></p>
+
+        <div class="buttons">
+            <button id="roll-btn">Roll Dice</button>
+            <button id="multi-roll-btn">Roll Multiple Times</button>
+            <button id="guess-btn">Guess the Roll</button>
+        </div>
+
+        <p id="multi-result" class="result-box"></p>
+        <p id="guess-result" class="result-box"></p>
+        <p id="streak" class="streak">Correct guesses: 0</p>
+
+        <p class="hint">Tip: open the browser console (F12) to trace your code.</p>
+    </main>
+
+    <!-- Provided animation helper — do not edit -->
+    <script src="../protected/lab2/JS/animation.js"></script>
+    <!-- YOUR WORK GOES HERE -->
+    <script src="script.js"></script>
 </body>
 </html>
