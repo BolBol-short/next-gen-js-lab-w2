@@ -7,10 +7,11 @@
      /  = divide, but dividing by zero is impossible — handle it
 
    Only this week's tools: variables, operators, if/else, switch,
-   loops, prompt / alert / console.log.  No functions, no DOM.
+   loops, prompt / console.log.  No functions, no DOM, no alert.
 
-   The INPUT and OUTPUT are provided. You write the calculation.
-   Run: open index.html with Live Server, then F12 for the console.
+   INPUT is asked with prompt(); OUTPUT is printed to the console.
+   The input and output are provided — you write the calculation.
+   Run: open index.html with Live Server, then press F12 for the console.
    ================================================================ */
 "use strict";
 
@@ -53,9 +54,9 @@ while (keepGoing === true) {
 
 
 
-        /* ---- PROVIDED: output — do not edit ----------------------- */
-        alert("Result: " + result);
-        console.log("Result:", result);
+        /* ---- PROVIDED: output (console only) — do not edit -------- */
+        const shown = (op === "!") ? (a + "!") : (a + " " + op + " " + b);
+        console.log(shown + " = " + result);
         count = count + 1;
     }
 }

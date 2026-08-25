@@ -2,9 +2,7 @@
    JavaScript — Week 2 — Lab 2 · Console Calculator · SOLUTION (lean)
    ----------------------------------------------------------------
    INSTRUCTOR REFERENCE — answer key for the leaner assignment.js.
-   Same PROVIDED plumbing; the YOUR CODE region is filled in.
-   Pure Week 2: variables, operators, if/else, switch, loops,
-   prompt / alert / console.log.  No functions, no DOM.
+   Console-only output (no alert). Same PROVIDED plumbing.
 ================================================================= */
 "use strict";
 
@@ -32,7 +30,6 @@ while (keepGoing === true) {
 
         /* ---- YOUR CODE (answer) ------------------------------ */
         if (op === "!") {
-            // Factorial of a: 1 * 2 * 3 * ... * a   (0! = 1)
             let f = 1;
             for (let k = 1; k <= a; k++) {
                 f = f * k;
@@ -57,9 +54,9 @@ while (keepGoing === true) {
         }
         /* ---- END YOUR CODE ----------------------------------- */
 
-        /* ---- PROVIDED: output -------------------------------- */
-        alert("Result: " + result);
-        console.log("Result:", result);
+        /* ---- PROVIDED: output (console only) ----------------- */
+        const shown = (op === "!") ? (a + "!") : (a + " " + op + " " + b);
+        console.log(shown + " = " + result);
         count = count + 1;
     }
 }
